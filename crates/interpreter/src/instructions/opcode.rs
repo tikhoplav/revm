@@ -85,7 +85,6 @@ pub const fn make_instruction_table<SPEC: Spec, H: Host>() -> InstructionTable<H
     table
 }
 
-
 /// Make boxed instruction table that calls `outer` closure for every instruction.
 pub fn make_boxed_instruction_table<'a, SPEC: Spec + 'static, H: Host + 'a, FN>(
     table: InstructionTable<H>,
